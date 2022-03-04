@@ -20,6 +20,9 @@ public class SpringbutcherApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws InterruptedException {
-        quoter.sayQuote();
+        while (true) {
+            Thread.sleep(1000);
+            quoter.sayQuote();
+        }
     }
 }
